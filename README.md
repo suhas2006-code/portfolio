@@ -54,7 +54,7 @@ Open [http://localhost:3000](http://localhost:3000)
 - **Education**: B.Tech CSE @ Amrita Vishwa Vidyapeetham (2024–2028)
 - **Focus**: Full-Stack Development, Flutter & Firebase, AI/ML
 - **GitHub**: [suhas2006-code](https://github.com/suhas2006-code)
-- **Email**: annemsuhasreddy@gmail.com
+- **Email**: suhaspurple@gmail.com
 
 ## 📱 Featured Projects
 
