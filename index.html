@@ -5,13 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Kankatala Ganesh Giridhar — B.Tech CSE Student at Amrita Vishwa Vidyapeetham. Full-Stack Developer, Algorithm Enthusiast, and Sustainability Researcher.">
-  <meta name="keywords" content="Ganesh Giridhar, Portfolio, B.Tech CSE, Full Stack Developer, Amrita, Web Developer">
-  <meta name="author" content="Kankatala Ganesh Giridhar">
-  <title>Ganesh Giridhar — Full Stack Developer & CS Engineer</title>
+    content="Annem Suhas Reddy — B.Tech CSE Student at Amrita Vishwa Vidyapeetham. Full-Stack Developer, App Developer, and AI Enthusiast.">
+  <meta name="keywords"
+    content="Suhas Reddy, Portfolio, B.Tech CSE, Full Stack Developer, App Developer, Flutter, Amrita">
+  <meta name="author" content="Annem Suhas Reddy">
+  <title>Suhas Reddy — Full Stack & App Developer</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%236C3CE1'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Inter,sans-serif' font-weight='900' font-size='28'>GG</text></svg>">
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23ff6b2b'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' fill='%23ffffff' font-family='Inter,sans-serif' font-weight='900' font-size='28'>SR</text></svg>">
 </head>
 
 <body>
@@ -22,22 +23,18 @@
   <!-- Cursor Glow (desktop) -->
   <div class="cursor-glow" id="cursorGlow"></div>
 
-  <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+  <!-- ═══════════════════════ NAVBAR — FLOATING PILL ═══════════════════════ -->
   <nav class="navbar" id="navbar">
-    <div class="container">
+    <div class="nav-pill">
       <a href="#" class="nav-logo">
-        <div class="nav-logo-icon">GG</div>
-        <span>Ganesh</span>
+        <div class="nav-logo-icon">SR</div>
       </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
-        <li><a href="#journey">Journey</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact" class="nav-cta btn btn-primary" style="padding: 10px 24px; font-size: 0.8rem;">Let's
-            Connect</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#contact" class="nav-cta">Connect</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span>
@@ -48,30 +45,27 @@
     <div class="nav-overlay" id="navOverlay"></div>
   </nav>
 
-  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <!-- ═══════════════════════ HERO — CENTERED SPLIT ═══════════════════════ -->
   <section class="hero" id="hero">
-    <!-- Animated background blobs -->
-    <div class="hero-blob hero-blob-1"></div>
-    <div class="hero-blob hero-blob-2"></div>
-    <div class="hero-blob hero-blob-3"></div>
-    <!-- Particle canvas -->
     <canvas id="particles-canvas"></canvas>
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span class="pulse"></span>
-          Open to opportunities
-        </div>
-        <h1 class="hero-title">
-          Hi, I'm <span class="gradient-text gradient-text-animated">Ganesh</span><br>Giridhar
-        </h1>
+    <div class="hero-grain"></div>
+    <div class="hero-mesh"></div>
+    <div class="container hero-centered">
+      <!-- Left: Text -->
+      <div class="hero-text">
+        <h1 class="hero-title">Annem <span class="gradient-text">Suhas Reddy</span></h1>
         <p class="hero-subtitle">
           <span id="typewriter"></span><span class="typewriter-cursor"></span>
         </p>
         <p class="hero-description">
-          B.Tech CSE student at Amrita Vishwa Vidyapeetham building scalable systems, AI-powered platforms, and
-          research-backed solutions for real-world impact.
+          B.Tech CSE student building full-stack systems, cross-platform mobile apps with Flutter & Firebase,
+          and AI-powered platforms — all for real-world impact.
         </p>
+        <div class="hero-chips">
+          <span class="chip">🎓 Amrita Vishwa Vidyapeetham</span>
+          <span class="chip">📱 Flutter Dev</span>
+          <span class="chip">🤖 AI Explorer</span>
+        </div>
         <div class="hero-btns">
           <a href="#contact" class="btn btn-primary magnetic">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -79,557 +73,234 @@
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
               <polyline points="22,6 12,13 2,6" />
             </svg>
-            <span>Let's Connect</span>
+            Let's Connect
           </a>
-          <a href="https://github.com/Ganesh2006646" target="_blank" class="btn btn-secondary magnetic">
+          <a href="https://github.com/suhas2006-code" target="_blank" class="btn btn-ghost magnetic">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
             </svg>
-            <span>View GitHub</span>
+            GitHub
           </a>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="profile-frame">
-          <div class="profile-ring"></div>
-          <div class="profile-ring-inner"></div>
-          <div class="profile-img">
-            <img src="profile.png" alt="Kankatala Ganesh Giridhar" id="profilePhoto">
-          </div>
-          <!-- Orbit icons -->
-          <div class="orbit-icon">💻</div>
-          <div class="orbit-icon">🚀</div>
-          <div class="orbit-icon">🔬</div>
-          <div class="orbit-icon">⚡</div>
+      <!-- Right: Avatar -->
+      <div class="hero-avatar">
+        <div class="avatar-frame">
+          <img src="profile.png" alt="Annem Suhas Reddy" id="profilePhoto">
+          <div class="avatar-border-anim"></div>
+        </div>
+        <div class="avatar-status">
+          <span class="status-dot"></span> Available for work
         </div>
       </div>
     </div>
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll down</span>
+    </div>
   </section>
 
-  <!-- ═══════════════════════ ABOUT ═══════════════════════ -->
+  <!-- ═══════════════════════ ABOUT — TWO-COLUMN WITH LEFT ACCENT ═══════════════════════ -->
   <section class="section about" id="about">
     <div class="container">
       <div class="section-header reveal">
         <span class="section-label">✦ About Me</span>
-        <h2 class="section-title">Building the Future,<br>One System at a Time</h2>
+        <h2 class="section-title">Building the Future,<br>One App at a Time</h2>
       </div>
-      <div class="about-grid">
+      <div class="about-layout">
         <div class="about-text reveal reveal-left">
-          <p class="lead-text">
-            I am a motivated <strong>B.Tech Computer Science student</strong> with a strong interest in
-            <strong>Artificial Intelligence</strong> and AI-driven product development. I combine technical learning
-            with structured thinking, curiosity, and disciplined self-growth.
-          </p>
-          <p>
-            My focus lies in building meaningful AI-powered solutions that solve real-world problems while continuously
-            improving my technical and analytical skills. I thrive at the intersection of <strong>human behavior and
-              intelligent systems</strong>.
-          </p>
-          <div class="strengths-badges">
-            <span class="strength-badge">🧘 Calm & Disciplined</span>
-            <span class="strength-badge">💡 Self-Motivated Learner</span>
-            <span class="strength-badge">🤝 Team Oriented</span>
-            <span class="strength-badge">💎 Strong Integrity</span>
+          <div class="accent-card">
+            <p class="lead-text">
+              I am a motivated <strong>B.Tech Computer Science student</strong> with a strong interest in
+              <strong>App Development</strong>, <strong>Artificial Intelligence</strong>, and AI-driven product
+              development.
+            </p>
+            <p>
+              My focus lies in building meaningful mobile and web solutions that solve real-world problems while
+              continuously improving my technical and analytical skills. I thrive at the intersection of
+              <strong>user experience and intelligent systems</strong>.
+            </p>
+          </div>
+          <div class="trait-grid">
+            <div class="trait-item"><span class="trait-icon">🧘</span><span>Calm & Disciplined</span></div>
+            <div class="trait-item"><span class="trait-icon">💡</span><span>Self-Motivated</span></div>
+            <div class="trait-item"><span class="trait-icon">🤝</span><span>Team Oriented</span></div>
+            <div class="trait-item"><span class="trait-icon">💎</span><span>Strong Integrity</span></div>
           </div>
         </div>
-        <div class="about-stats reveal reveal-right reveal-delay-2">
-          <div class="stat-card">
-            <div class="stat-number" data-target="9">0</div>
-            <div class="stat-label">Projects Built</div>
+        <div class="about-metrics reveal reveal-right reveal-delay-2">
+          <div class="metric-card">
+            <span class="metric-num" data-target="7">0</span>
+            <span class="metric-label">Projects Built</span>
           </div>
-          <div class="stat-card">
-            <div class="stat-number" data-target="6">0</div>
-            <div class="stat-label">Languages Known</div>
+          <div class="metric-card highlight">
+            <span class="metric-num" data-target="1">0</span>
+            <span class="metric-label">Published App</span>
           </div>
-          <div class="stat-card">
-            <div class="stat-number" data-target="1">0</div>
-            <div class="stat-label">Research Paper</div>
+          <div class="metric-card">
+            <span class="metric-num" data-target="6">0</span>
+            <span class="metric-label">Languages</span>
           </div>
-          <div class="stat-card">
-            <div class="stat-number" data-target="4">0</div>
-            <div class="stat-label">SDGs Aligned</div>
+          <div class="metric-card">
+            <span class="metric-num" data-target="4">0</span>
+            <span class="metric-label">SDGs Aligned</span>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════ JOURNEY ═══════════════════════ -->
-  <section class="section journey" id="journey">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">🛤️ Growth Journey</span>
-        <h2 class="section-title">My Learning & Evolution</h2>
-        <p class="section-subtitle">A timeline of my transition from foundational programming to agentic AI systems and
-          product engineering.</p>
-      </div>
-
-      <!-- Visual Roadmap Diagram (High Level) -->
-      <div class="roadmap-container reveal">
-        <div class="roadmap-diagram reveal">
-          <div class="roadmap-line">
-            <div class="roadmap-progress"></div>
-          </div>
-
-          <!-- Phase 1 Node -->
-          <div class="roadmap-node">
-            <div class="node-circle">💻</div>
-            <div class="node-info">
-              <div class="node-year">2024</div>
-              <div class="node-label">Foundations</div>
-            </div>
-          </div>
-
-          <!-- Phase 2 Node -->
-          <div class="roadmap-node">
-            <div class="node-circle">🏛️</div>
-            <div class="node-info">
-              <div class="node-year">2024</div>
-              <div class="node-label">Architecture</div>
-            </div>
-          </div>
-
-          <!-- Phase 3 Node -->
-          <div class="roadmap-node">
-            <div class="node-circle">🌐</div>
-            <div class="node-info">
-              <div class="node-year">2025</div>
-              <div class="node-label">Full Stack</div>
-            </div>
-          </div>
-
-          <!-- Phase 4 Node -->
-          <div class="roadmap-node">
-            <div class="node-circle">🤖</div>
-            <div class="node-info">
-              <div class="node-year">2025</div>
-              <div class="node-label">Agentic AI</div>
-            </div>
-          </div>
-
-          <!-- Phase 5 Node -->
-          <div class="roadmap-node">
-            <div class="node-circle">🔬</div>
-            <div class="node-info">
-              <div class="node-year">2026</div>
-              <div class="node-label">Research</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-container">
-        <!-- Phase 1 -->
-        <div class="timeline-item reveal reveal-left">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <span class="timeline-date">Phase 1 — Early 2024</span>
-            <h3>Building the Foundation</h3>
-            <p>Strengthened core programming fundamentals and logical thinking through Python and Java.</p>
-            <ul>
-              <li>Data Structures</li>
-              <li>Algorithm Design</li>
-              <li>OOP Principles</li>
-              <li>File Handling</li>
-            </ul>
-            <p style="margin-top: 12px; font-style: italic;">Key Project: Python Product Sorting & Review System using
-              Pandas & JSON.</p>
-          </div>
-        </div>
-
-        <!-- Phase 2 -->
-        <div class="timeline-item reveal reveal-right">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <span class="timeline-date">Phase 2 — Mid 2024 - Early 2025</span>
-            <h3>System Architecture</h3>
-            <p>Shifted from writing programs to designing scalable systems with a focus on efficiency.</p>
-            <ul>
-              <li>Modular Design</li>
-              <li>Clean Architecture</li>
-              <li>Performance Tuning</li>
-              <li>Complexity Analysis</li>
-            </ul>
-            <p style="margin-top: 12px; font-style: italic;">Key Projects: Virtual Court Case Management (OOP) &
-              WooCommerce Sorting Engine (In-place 3-way QuickSort).</p>
-          </div>
-        </div>
-
-        <!-- Phase 3 -->
-        <div class="timeline-item reveal reveal-left">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <span class="timeline-date">Phase 3 — 2025</span>
-            <h3>Full-Stack & Product Engineering</h3>
-            <p>Expanded into end-to-end product development with a focus on real-world usability.</p>
-            <ul>
-              <li>Full-Stack Web</li>
-              <li>Mobile (Flutter)</li>
-              <li>UX Consistency</li>
-              <li>SQLite/Drift Logic</li>
-            </ul>
-            <p style="margin-top: 12px; font-style: italic;">Key Projects: Advanced AI Tourism Platform, Transport
-              Booking & RiceAgent (Offline-first Mobile).</p>
-          </div>
-        </div>
-
-        <!-- Phase 4 -->
-        <div class="timeline-item reveal reveal-right">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <span class="timeline-date">Phase 4 — Late 2025</span>
-            <h3>AI Systems & Agentic Architectures</h3>
-            <p>Focus on rapid prototyping of intelligent systems and AI orchestration under constraints.</p>
-            <ul>
-              <li>Pathway Engine</li>
-              <li>Gemini Flash-Lite</li>
-              <li>Agentic Reasoning</li>
-              <li>Real-time Streaming</li>
-            </ul>
-            <p style="margin-top: 12px; font-style: italic;">Key Project: Spectra-Shield (Agentic Signal Sovereignty) —
-              Build-athon Score: 18.200.</p>
-          </div>
-        </div>
-
-        <!-- Phase 5 -->
-        <div class="timeline-item reveal reveal-left">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <span class="timeline-date">Phase 5 — 2025-2026</span>
-            <h3>Research & Sustainable Tech</h3>
-            <p>Developed research discipline and systems thinking beyond software through Live-in-Labs.</p>
-            <ul>
-              <li>Purification Models</li>
-              <li>SDG Frameworks</li>
-              <li>System Modeling</li>
-              <li>Data-backed Analysis</li>
-            </ul>
-            <p style="margin-top: 12px; font-style: italic;">Key Project: Community-Led Water Purification System
-              (Environmental Tech).</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="journey-summary">
-        <div class="summary-card reveal reveal-left">
-          <h3>🎯 Current Focus</h3>
-          <p>
-            Strengthening <strong>Advanced DSA</strong>, <strong>AI with Azure</strong>, and <strong>System
-              Design</strong> fundamentals. Actively preparing for AI Engineering roles and Product Management pathways
-            with a focus on scalability.
-          </p>
-        </div>
-        <div class="summary-card reveal reveal-right">
-          <h3>🔮 Vision Forward</h3>
-          <p>
-            To become a technically strong <strong>AI Engineer</strong> and <strong>Product-oriented
-              Technologist</strong>. A builder who bridges AI innovation with scalable, impact-driven, and user-centric
-            products.
-          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════ SKILLS ═══════════════════════ -->
+  <!-- ═══════════════════════ SKILLS — HORIZONTAL SCROLL + GRID ═══════════════════════ -->
   <section class="section skills" id="skills">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">🛠 Skills & Technologies</span>
-        <h2 class="section-title">My Technical Arsenal</h2>
-        <p class="section-subtitle">A multidisciplinary toolkit spanning development, algorithms, databases, and
-          research</p>
+        <span class="section-label">🛠 Tech Stack</span>
+        <h2 class="section-title">What I Work With</h2>
       </div>
-      <div class="skills-grid">
 
-        <div class="skill-card reveal">
+      <!-- Scrolling tech ticker -->
+      <div class="tech-ticker reveal">
+        <div class="ticker-track">
+          <span>Python</span><span>•</span><span>Flutter</span><span>•</span><span>Dart</span><span>•</span><span>Firebase</span><span>•</span><span>JavaScript</span><span>•</span><span>Node.js</span><span>•</span><span>React.js</span><span>•</span><span>Java</span><span>•</span><span>SQL</span><span>•</span><span>HTML/CSS</span><span>•</span><span>C</span><span>•</span><span>Haskell</span><span>•</span>
+          <span>Python</span><span>•</span><span>Flutter</span><span>•</span><span>Dart</span><span>•</span><span>Firebase</span><span>•</span><span>JavaScript</span><span>•</span><span>Node.js</span><span>•</span><span>React.js</span><span>•</span><span>Java</span><span>•</span><span>SQL</span><span>•</span><span>HTML/CSS</span><span>•</span><span>C</span><span>•</span><span>Haskell</span><span>•</span>
+        </div>
+      </div>
+
+      <div class="skills-bento">
+        <div class="bento-item bento-wide skill-card reveal">
+          <div class="skill-icon">📱</div>
+          <h3>App Development</h3>
+          <div class="skill-list">
+            <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Firebase Expert</span>
+            <span class="tag">Mobile UI/UX</span><span class="tag">State Management</span>
+          </div>
+        </div>
+        <div class="bento-item skill-card reveal reveal-delay-1">
           <div class="skill-icon">💻</div>
-          <h3>Programming Languages</h3>
+          <h3>Languages</h3>
           <div class="skill-list">
-            <span class="tag">Python</span>
-            <span class="tag">Java</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">SQL</span>
-            <span class="tag">C</span>
-            <span class="tag">Haskell</span>
+            <span class="tag">Python</span><span class="tag">Java</span><span class="tag">JavaScript</span>
+            <span class="tag">SQL</span><span class="tag">C</span><span class="tag">Haskell</span>
           </div>
         </div>
-
-        <div class="skill-card reveal reveal-delay-1">
+        <div class="bento-item skill-card reveal reveal-delay-2">
           <div class="skill-icon">🌐</div>
-          <h3>Frontend Development</h3>
+          <h3>Web & Frontend</h3>
           <div class="skill-list">
-            <span class="tag">HTML5</span>
-            <span class="tag">CSS3</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">DOM Manipulation</span>
-            <span class="tag">Responsive Design</span>
-            <span class="tag">UI/UX</span>
+            <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">React.js</span>
+            <span class="tag">Responsive Design</span><span class="tag">UI/UX</span>
           </div>
         </div>
-
-        <div class="skill-card reveal reveal-delay-2">
+        <div class="bento-item skill-card reveal reveal-delay-1">
           <div class="skill-icon">⚙️</div>
-          <h3>Backend & Full Stack</h3>
+          <h3>Backend & Data</h3>
           <div class="skill-list">
-            <span class="tag">Node.js</span>
-            <span class="tag">React.js</span>
-            <span class="tag">Java OOP</span>
-            <span class="tag">Modular Design</span>
-            <span class="tag">JSON</span>
-            <span class="tag">Pandas</span>
+            <span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag">MySQL</span>
+            <span class="tag">REST API</span><span class="tag">JSON</span><span class="tag">Pandas</span>
           </div>
         </div>
-
-        <div class="skill-card reveal reveal-delay-3">
-          <div class="skill-icon">🗄️</div>
-          <h3>Database & Data</h3>
-          <div class="skill-list">
-            <span class="tag">MySQL</span>
-            <span class="tag">ER Diagrams</span>
-            <span class="tag">Normalization</span>
-            <span class="tag">Aggregations</span>
-            <span class="tag">Query Optimization</span>
-          </div>
-        </div>
-
-        <div class="skill-card reveal">
+        <div class="bento-item bento-wide skill-card reveal reveal-delay-2">
           <div class="skill-icon">🧠</div>
-          <h3>CS Fundamentals</h3>
+          <h3>AI, Tools & Foundations</h3>
           <div class="skill-list">
-            <span class="tag">DSA (Java)</span>
-            <span class="tag">QuickSort</span>
-            <span class="tag">OS Scheduling</span>
-            <span class="tag">Linear Algebra</span>
-            <span class="tag">OOP Principles</span>
-          </div>
-        </div>
-
-        <div class="skill-card reveal reveal-delay-2">
-          <div class="skill-icon">🛠️</div>
-          <h3>AI & Automation Tools</h3>
-          <div class="skill-list">
-            <span class="tag">n8n</span>
-            <span class="tag">AntiGravity</span>
+            <span class="tag">Gemini AI</span><span class="tag">AntiGravity</span><span class="tag">DSA (Java)</span>
+            <span class="tag">OOP Principles</span><span class="tag">OS Scheduling</span>
             <span class="tag">AI Workflows</span>
-            <span class="tag">Certification Learning</span>
           </div>
         </div>
-
-        <div class="skill-card reveal reveal-delay-3">
-          <div class="skill-icon">🫂</div>
-          <h3>Personal Strengths</h3>
-          <div class="skill-list">
-            <span class="tag">Team-Oriented</span>
-            <span class="tag">Strong Integrity</span>
-            <span class="tag">Self-Motivated</span>
-            <span class="tag">Growth-Focused</span>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════ PROJECTS ═══════════════════════ -->
+  <!-- ═══════════════════════ PROJECTS — BENTO GRID ═══════════════════════ -->
   <section class="section projects" id="projects">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">🚀 Project Showcase</span>
+        <span class="section-label">🚀 Projects</span>
         <h2 class="section-title">Things I've Built</h2>
-        <p class="section-subtitle">From AI-powered platforms to algorithm optimization — each project solves a real
+        <p class="section-subtitle">From mobile health apps to AI-powered platforms — each project solves a real
           problem</p>
       </div>
-      <div class="projects-grid">
+      <div class="projects-bento">
 
-        <!-- Featured: Food Management System -->
-        <div class="project-card featured reveal reveal-scale">
-          <div class="project-card-header">
-            <div class="project-emoji">🍽️</div>
-            <span class="project-timeline">2025</span>
+        <!-- FEATURED — Calorie Vita (large card) -->
+        <div class="project-card pcard-hero reveal reveal-scale">
+          <div class="pcard-badge">⭐ Featured</div>
+          <div class="pcard-emoji">🔥</div>
+          <h3>Calorie Vita — Health & Fitness Tracker</h3>
+          <span class="pcard-date">2025-2026 · Published Mobile App</span>
+          <p>
+            A comprehensive calorie tracking and fitness app built with Flutter & Firebase. Features food history
+            logging with photo capture, exercise tracking, fasting timer, reports & insights, multi-language
+            localization (English & Japanese), shareable health cards, and a premium iOS-inspired UI.
+          </p>
+          <div class="pcard-tags">
+            <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Firebase</span>
+            <span class="tag">Localization</span><span class="tag">SQLite</span>
           </div>
-          <div class="project-card-body">
-            <h3>Mess / Food Management System</h3>
-            <span class="project-duration">Full-Stack Web Application</span>
-            <p>
-              A role-based food management system for college mess operations. Features student/admin dashboards for
-              menu management, meal check-in, feedback & ratings, recipe suggestions, attendance reports with Chart.js
-              visualizations, and real-time notifications.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Node.js</span>
-              <span class="tag">Express 5</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">Bootstrap 5</span>
-              <span class="tag">Chart.js</span>
-              <span class="tag">REST API</span>
-            </div>
-            <div class="project-role">
-              <strong>My Role:</strong> Full-stack architecture, database schema design (6 tables + stored procedures),
-              REST API development (15+ endpoints), role-based auth, and interactive dashboard UI.
-            </div>
-          </div>
+          <div class="pcard-role">Full app architecture, UI/UX design, Firebase integration, multi-language support,
+            exercise & fasting modules, reports dashboard, and app store deployment.</div>
         </div>
 
-        <!-- Featured: Spectra-Shield Hackathon -->
-        <div class="project-card featured reveal reveal-scale">
-          <div class="project-card-header">
-            <div class="project-emoji">🛡️</div>
-            <span class="project-timeline">Dec 2025</span>
-          </div>
-          <div class="project-card-body">
-            <h3>Spectra-Shield: Agentic Signal Sovereignty</h3>
-            <span class="project-duration">Hackathon Build-athon · Score: 18.200</span>
-            <p>
-              An agentic AI system solving the "Latency Gap" in electromagnetic signal processing. Uses a Pathway Engine
-              for real-time streaming data, with Gemini 2.5 Flash-Lite as the autonomous reasoning layer. Detects
-              anomalies like unauthorized drone frequencies and generates localized defense strategies — frequency
-              hopping, signal masking, and "Ghost Unit" creation.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Gemini 2.5 Flash-Lite</span>
-              <span class="tag">Pathway Engine</span>
-              <span class="tag">LiteLLM</span>
-              <span class="tag">Agentic AI</span>
-              <span class="tag">Signal Processing</span>
-              <span class="tag">Real-Time Streaming</span>
-            </div>
-            <div class="project-role">
-              <strong>Team:</strong> skullbuddies · Track 1: Agentic AI (Applied GenAI) · Use cases: Dynamic Defense,
-              Contactless ICU Monitoring, Signal-Based Pest Control.
-            </div>
-          </div>
-        </div>
-
-        <!-- RiceAgent -->
+        <!-- Mess / Food Management -->
         <div class="project-card reveal">
-          <div class="project-card-header">
-            <div class="project-emoji">🌾</div>
-            <span class="project-timeline">2024–2025</span>
-          </div>
-          <div class="project-card-body">
-            <h3>RiceAgent: Offline-First Order Management</h3>
-            <span class="project-duration">Full-stack Mobile Solution</span>
-            <p>
-              A robust, offline-first Flutter application for rice-mill order management. Features a local SQLite
-              database (Drift) with automated code generation, optimized APK builds (~25MB for arm64), and specialized
-              data management for customers and rice varieties.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Flutter</span>
-              <span class="tag">SQLite/Drift</span>
-              <span class="tag">Offline-First</span>
-              <span class="tag">R8/ProGuard</span>
-              <span class="tag">Android Development</span>
-            </div>
-            <div class="project-role">
-              <strong>Impact:</strong> Optimized field agent workflows with localized data sovereignty and
-              high-performance cross-architecture builds.
-            </div>
+          <div class="pcard-emoji">🍽️</div>
+          <h3>Mess / Food Management System</h3>
+          <span class="pcard-date">2025 · Full-Stack Web App</span>
+          <p>
+            A role-based food management system for college mess operations with dashboards, meal check-in, feedback,
+            Chart.js visualizations, and real-time notifications.
+          </p>
+          <div class="pcard-tags">
+            <span class="tag">Node.js</span><span class="tag">Express 5</span><span class="tag">PostgreSQL</span>
+            <span class="tag">Chart.js</span>
           </div>
         </div>
 
-        <!-- Transport Booking -->
+        <!-- Spectra-Shield -->
         <div class="project-card reveal">
-          <div class="project-card-header">
-            <div class="project-emoji">🚆</div>
-            <span class="project-timeline">Q3 2025</span>
-          </div>
-          <div class="project-card-body">
-            <h3>Dynamic Transport Booking System</h3>
-            <span class="project-duration">~2 weeks</span>
-            <p>
-              A booking page with dynamic transport type selection via buttons, auto-calculated fares, ticket display
-              generation, and download functionality.
-            </p>
-            <div class="project-tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">DOM Manipulation</span>
-            </div>
-            <div class="project-role">
-              <strong>My Role:</strong> UI flow design, dynamic DOM manipulation, fare calculation logic, and ticket
-              display module.
-            </div>
+          <div class="pcard-emoji">🛡️</div>
+          <h3>Spectra-Shield: Agentic Signal Sovereignty</h3>
+          <span class="pcard-date">Dec 2025 · Hackathon · Score: 18.200</span>
+          <p>
+            An agentic AI system solving the "Latency Gap" in EM signal processing using Pathway Engine + Gemini 2.5
+            Flash-Lite for real-time autonomous defense strategies.
+          </p>
+          <div class="pcard-tags">
+            <span class="tag">Gemini AI</span><span class="tag">Pathway</span><span class="tag">Agentic AI</span>
+            <span class="tag">Real-Time</span>
           </div>
         </div>
 
         <!-- Court Case -->
         <div class="project-card reveal">
-          <div class="project-card-header">
-            <div class="project-emoji">⚖️</div>
-            <span class="project-timeline">Apr 2025</span>
-          </div>
-          <div class="project-card-body">
-            <h3>Virtual Court Case Management System</h3>
-            <span class="project-duration">3–4 weeks</span>
-            <p>
-              A structured OOP-based case management platform demonstrating multiple packages, classes, test cases, and
-              object-oriented design principles.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Java</span>
-              <span class="tag">OOP</span>
-              <span class="tag">Package Structuring</span>
-            </div>
-            <div class="project-role">
-              <strong>My Role:</strong> Class diagram design, multi-package architecture, core OOP implementation, and
-              test case development.
-            </div>
+          <div class="pcard-emoji">⚖️</div>
+          <h3>Virtual Court Case Management</h3>
+          <span class="pcard-date">Apr 2025 · OOP Project</span>
+          <p>
+            A structured OOP-based case management platform with multiple packages, classes, test cases, and
+            object-oriented design principles.
+          </p>
+          <div class="pcard-tags">
+            <span class="tag">Java</span><span class="tag">OOP</span><span class="tag">Package Design</span>
           </div>
         </div>
 
-
-
-        <!-- Water Purification -->
+        <!-- Python Sorting -->
         <div class="project-card reveal">
-          <div class="project-card-header">
-            <div class="project-emoji">💧</div>
-            <span class="project-timeline">2025–2026</span>
-          </div>
-          <div class="project-card-body">
-            <h3>Community-Led Water Purification System</h3>
-            <span class="project-duration">Multi-month Research</span>
-            <p>
-              Designed a modular multi-stage water purification system integrating ultrafiltration, advanced oxidation,
-              nanofiltration/RO, and real-time sensor monitoring for a rural village.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Research</span>
-              <span class="tag">SDG Aligned</span>
-              <span class="tag">Environmental Design</span>
-            </div>
-            <div class="project-role">
-              <strong>My Role:</strong> Water quality analysis, literature review, system architecture proposal, SDG
-              alignment, and community sustainability strategy.
-            </div>
-          </div>
-        </div>
-
-        <!-- Python Product Sorting -->
-        <div class="project-card reveal">
-          <div class="project-card-header">
-            <div class="project-emoji">🧩</div>
-            <span class="project-timeline">Early 2024</span>
-          </div>
-          <div class="project-card-body">
-            <h3>Python Product Sorting & Review System</h3>
-            <span class="project-duration">3–4 weeks</span>
-            <p>
-              Built a modular product management system using Python collections, file handling, JSON, and Pandas for
-              optimized product decision-making.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">JSON</span>
-              <span class="tag">Pandas</span>
-            </div>
-            <div class="project-role">
-              <strong>My Role:</strong> Data structure design, sorting logic, file operations, JSON integration, and
-              documentation.
-            </div>
+          <div class="pcard-emoji">🧩</div>
+          <h3>Python Product Sorting & Review</h3>
+          <span class="pcard-date">Early 2024 · Data Project</span>
+          <p>
+            Built a modular product management system using Python collections, file handling, JSON, and Pandas for
+            optimized decision-making.
+          </p>
+          <div class="pcard-tags">
+            <span class="tag">Python</span><span class="tag">JSON</span><span class="tag">Pandas</span>
           </div>
         </div>
 
@@ -637,76 +308,90 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════ ACHIEVEMENTS ═══════════════════════ -->
+  <!-- ═══════════════════════ JOURNEY — HORIZONTAL CARDS ═══════════════════════ -->
+  <section class="section journey" id="journey">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">🛤️ Journey</span>
+        <h2 class="section-title">My Growth Timeline</h2>
+      </div>
+      <div class="journey-track">
+        <div class="journey-card reveal">
+          <div class="jcard-phase">01</div>
+          <h4>Foundations</h4>
+          <span class="jcard-date">Early 2024</span>
+          <p>Core programming fundamentals through Python & Java. Built a product sorting system with Pandas.</p>
+        </div>
+        <div class="journey-card reveal reveal-delay-1">
+          <div class="jcard-phase">02</div>
+          <h4>System Architecture</h4>
+          <span class="jcard-date">Mid 2024 – Early 2025</span>
+          <p>Shifted to designing scalable systems with clean architecture and complexity analysis.</p>
+        </div>
+        <div class="journey-card reveal reveal-delay-2">
+          <div class="jcard-phase">03</div>
+          <h4>Full-Stack & App Dev</h4>
+          <span class="jcard-date">2025</span>
+          <p>Built end-to-end products with Flutter, Firebase, Node.js. Launched the Calorie Vita app.</p>
+        </div>
+        <div class="journey-card reveal reveal-delay-3">
+          <div class="jcard-phase">04</div>
+          <h4>Agentic AI</h4>
+          <span class="jcard-date">Late 2025</span>
+          <p>Focus on AI orchestration — built Spectra-Shield with Gemini & Pathway Engine. Score: 18.200.</p>
+        </div>
+        <div class="journey-card reveal reveal-delay-4">
+          <div class="jcard-phase">05</div>
+          <h4>Product Engineering</h4>
+          <span class="jcard-date">2025–2026</span>
+          <p>Production-ready apps with localization, analytics, and app store deployment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ ACHIEVEMENTS — INLINE MARQUEE ═══════════════════════ -->
   <section class="section achievements" id="achievements">
     <div class="container">
       <div class="section-header reveal">
         <span class="section-label">🏆 Achievements</span>
         <h2 class="section-title">Milestones & Highlights</h2>
       </div>
-      <div class="achievements-list">
-
-        <div class="achievement-item reveal">
-          <div class="achievement-icon">⚡</div>
-          <div>
-            <h4>In-Place Three-Way QuickSort</h4>
-            <p>Designed an optimized algorithm handling 10,000+ records with in-place partitioning for WooCommerce
-              orders.</p>
-          </div>
+      <div class="achievement-grid">
+        <div class="ach-card reveal">
+          <span class="ach-icon">📱</span>
+          <h4>Published Calorie Vita App</h4>
+          <p>Built and deployed a comprehensive calorie & fitness tracking app with Flutter, Firebase, and
+            multi-language
+            support.</p>
         </div>
-
-        <div class="achievement-item reveal reveal-delay-1">
-          <div class="achievement-icon">🏗️</div>
-          <div>
-            <h4>Modular Java OOP System</h4>
-            <p>Built a multi-package architecture demonstrating advanced OOP concepts for a virtual court case
-              management system.</p>
-          </div>
+        <div class="ach-card reveal reveal-delay-1">
+          <span class="ach-icon">⚡</span>
+          <h4>In-Place Three-Way QuickSort</h4>
+          <p>Designed an optimized algorithm handling 10,000+ records with in-place partitioning for WooCommerce orders.
+          </p>
         </div>
-
-        <div class="achievement-item reveal reveal-delay-2">
-          <div class="achievement-icon">🌍</div>
-          <div>
-            <h4>AI Tourism Platform Concept</h4>
-            <p>Developed a product-grade, sellable AI-powered tourism website with interactive map and transport
-              booking.</p>
-          </div>
+        <div class="ach-card reveal reveal-delay-2">
+          <span class="ach-icon">🛡️</span>
+          <h4>Spectra-Shield Hackathon</h4>
+          <p>Built an Agentic AI system for EM signal sovereignty using Gemini 2.5 Flash-Lite & Pathway Engine. Score:
+            18.200.</p>
         </div>
-
-        <div class="achievement-item reveal">
-          <div class="achievement-icon">💧</div>
-          <div>
-            <h4>SDG-Aligned Research Paper</h4>
-            <p>Proposed a community-led water purification system with real-time monitoring for ICSRF 2025 conference
-              submission.</p>
-          </div>
+        <div class="ach-card reveal">
+          <span class="ach-icon">🏗️</span>
+          <h4>Modular Java OOP System</h4>
+          <p>Multi-package architecture demonstrating advanced OOP concepts for virtual court case management.</p>
         </div>
-
-        <div class="achievement-item reveal">
-          <div class="achievement-icon">🛡️</div>
-          <div>
-            <h4>Spectra-Shield — Hackathon Build-athon</h4>
-            <p>Built an Agentic AI system for EM signal sovereignty using Gemini 2.5 Flash-Lite & Pathway Engine. Score:
-              18.200.</p>
-          </div>
+        <div class="ach-card reveal reveal-delay-1">
+          <span class="ach-icon">🌍</span>
+          <h4>AI Tourism Platform</h4>
+          <p>Developed a product-grade AI-powered tourism website with interactive map and transport booking.</p>
         </div>
-
-        <div class="achievement-item reveal reveal-delay-1">
-          <div class="achievement-icon">🏆</div>
-          <div>
-            <h4>Hackathon Ecosystem Participation</h4>
-            <p>Active participation in Gemini 3 and Developer Week 2026 hackathon ecosystems.</p>
-          </div>
+        <div class="ach-card reveal reveal-delay-2">
+          <span class="ach-icon">🎯</span>
+          <h4>Hackathon Ecosystem</h4>
+          <p>Active participation in Gemini 3 and Developer Week 2026 hackathon ecosystems.</p>
         </div>
-
-        <div class="achievement-item reveal reveal-delay-2">
-          <div class="achievement-icon">🎯</div>
-          <div>
-            <h4>Academic-Engineering Balance</h4>
-            <p>Balanced cutting-edge academic research with applied software engineering across multiple domains.</p>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
@@ -718,133 +403,59 @@
         <span class="section-label">🎓 Education</span>
         <h2 class="section-title">Academic Background</h2>
       </div>
-      <div class="education-card reveal reveal-scale">
-        <div class="edu-header">
-          <div class="edu-icon">🎓</div>
-          <div>
-            <h3>Amrita Vishwa Vidyapeetham, Coimbatore</h3>
-            <div class="edu-degree">Bachelor of Technology — Computer Science & Engineering</div>
-            <div class="edu-status">Completed First Year • Progressing into advanced core subjects</div>
-          </div>
-        </div>
-        <div class="edu-item">
-          <div class="edu-header">
-            <div class="edu-icon">🎓</div>
-            <div class="edu-title-group">
-              <h3>B.Tech in Computer Science Engineering</h3>
-              <p class="edu-org">Amrita Vishwa Vidyapeetham</p>
-            </div>
+      <div class="edu-timeline reveal">
+        <div class="edu-card">
+          <div class="edu-marker">🎓</div>
+          <div class="edu-body">
+            <h3>B.Tech in Computer Science Engineering</h3>
+            <p class="edu-org">Amrita Vishwa Vidyapeetham</p>
             <span class="edu-date">2024 — 2028</span>
-          </div>
-          <div class="edu-details">
-            <p>Focusing on Artificial Intelligence, Algorithm Design, and Scalable Systems.</p>
+            <p>Focusing on AI, Algorithm Design, App Development, and Scalable Systems.</p>
           </div>
         </div>
-
-        <div class="edu-item">
-          <div class="edu-header">
-            <div class="edu-icon">🏫</div>
-            <div class="edu-title-group">
-              <h3>Intermediate (+1, +2)</h3>
-              <p class="edu-org">Tirumala Educational Institutions</p>
-            </div>
+        <div class="edu-card">
+          <div class="edu-marker">🏫</div>
+          <div class="edu-body">
+            <h3>Intermediate (+1, +2)</h3>
+            <p class="edu-org">Tirumala Educational Institutions</p>
             <span class="edu-date">2019 — 2024</span>
-          </div>
-          <div class="edu-details">
             <p>Core Focus: Critical Thinking, Analytical Problem Solving, and Scientific Foundations.</p>
           </div>
         </div>
-
-        <div class="edu-item">
-          <div class="edu-header">
-            <div class="edu-icon">🎒</div>
-            <div class="edu-title-group">
-              <h3>Schooling</h3>
-              <p class="edu-org">Sri Chaitanya College of Education</p>
-            </div>
+        <div class="edu-card">
+          <div class="edu-marker">🎒</div>
+          <div class="edu-body">
+            <h3>Schooling</h3>
+            <p class="edu-org">Sri Chaitanya College of Education</p>
             <span class="edu-date">2008 — 2018</span>
-          </div>
-          <div class="edu-details">
             <p>Building strong logical foundations and curiosity-driven learning.</p>
-          </div>
-        </div>
-
-        <div class="edu-subjects" style="margin-top:40px;">
-          <h4>💡 Core Interests</h4>
-          <div class="edu-subject-tags">
-            <span class="tag">Artificial Intelligence</span>
-            <span class="tag">AI Product Management</span>
-            <span class="tag">Intelligent Systems</span>
-            <span class="tag">Human-Tech Intersection</span>
-            <span class="tag">Deep Problem Solving</span>
-          </div>
-        </div>
-
-        <div class="edu-subjects" style="margin-top:24px;">
-          <h4>🛠 Technical Foundation</h4>
-          <div class="edu-subject-tags">
-            <span class="tag">Python</span>
-            <span class="tag">OOP</span>
-            <span class="tag">HTML / CSS / JS</span>
-            <span class="tag">Node.js</span>
-            <span class="tag">AI Workflows</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════ CONTACT CTA ═══════════════════════ -->
+  <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
   <section class="section contact" id="contact">
     <div class="container">
-      <div class="contact-banner reveal reveal-scale">
-        <h2>Let's Build Something<br><span class="gradient-text">Amazing Together</span></h2>
-        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-        <div class="contact-links">
-          <a href="mailto:kankatalaganeshgiridhar@outlook.com" class="contact-link">
+      <div class="contact-card reveal reveal-scale">
+        <h2>Let's Build Something <span class="gradient-text">Amazing</span></h2>
+        <p>I'm always open to discussing new projects, creative ideas, or opportunities.</p>
+        <div class="contact-actions">
+          <a href="mailto:annemsuhasreddy@gmail.com" class="btn btn-primary magnetic">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
               <polyline points="22,6 12,13 2,6" />
             </svg>
-            kankatalaganeshgiridhar@outlook.com
+            Send Email
           </a>
-          <a href="https://github.com/Ganesh2006646" target="_blank" class="contact-link">
+          <a href="https://github.com/suhas2006-code" target="_blank" class="btn btn-ghost magnetic">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
             </svg>
             GitHub
-          </a>
-          <a href="https://www.linkedin.com/in/kankatala-ganesh-giridhar-071876322" target="_blank"
-            class="contact-link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-            </svg>
-            LinkedIn
-          </a>
-        </div>
-        <div class="contact-socials">
-          <a href="https://github.com/Ganesh2006646" target="_blank" class="social-icon" aria-label="GitHub">
-            <svg viewBox="0 0 24 24">
-              <path
-                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-            </svg>
-          </a>
-          <a href="https://www.linkedin.com/in/kankatala-ganesh-giridhar-071876322" target="_blank" class="social-icon"
-            aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24">
-              <path
-                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-            </svg>
-          </a>
-          <a href="mailto:kankatalaganeshgiridhar@outlook.com" class="social-icon" aria-label="Email">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-              <polyline points="22,6 12,13 2,6" />
-            </svg>
           </a>
         </div>
       </div>
@@ -854,25 +465,17 @@
   <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-logo">
-        <div class="nav-logo-icon" style="width:32px;height:32px;font-size:0.7rem;border-radius:8px;">GG</div>
-        Ganesh Giridhar
+      <div class="footer-left">
+        <div class="nav-logo-icon" style="width:28px;height:28px;font-size:0.6rem;border-radius:8px;">SR</div>
+        <span>Annem Suhas Reddy</span>
       </div>
-      <div class="footer-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="footer-copy">
-        &copy; 2026 Kankatala Ganesh Giridhar. All rights reserved.
+      <div class="footer-right">
+        &copy; 2026 · Crafted with care
       </div>
     </div>
   </footer>
 
-  <!-- Back to Top Button -->
+  <!-- Back to Top -->
   <button class="back-to-top" id="backToTop" aria-label="Back to top">
     <svg viewBox="0 0 24 24">
       <polyline points="18 15 12 9 6 15"></polyline>
